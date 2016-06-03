@@ -1,10 +1,9 @@
 // Document Ready
 $( document ).ready(function() {
-    $('.simple-tab').simple_tabs();
+    $('.simple-tabs').simple_tabs();
 });
 // Simple Tabs
 $.fn.simple_tabs = function (){
-    var $this = $(this);
     $(".simple-tab--nav li").click(function(e){
         if (!$(this).hasClass("active")) {
             var tabNum = $(this).index();
